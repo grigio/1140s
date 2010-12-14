@@ -1,0 +1,48 @@
+/* 1140s.scss is a SASS/SCSS version of the "1140px" layout system
+   Luigi Maselli - http://grigio.org
+ */
+ 
+/* Config */
+$num-cols:                                     12;
+$row-width:                               1140px;
+$container-lateral-padding:                 20px;
+$col-margin-right:                         3.8%;
+$col-unit: (100% + $col-margin-right) / $num-cols;
+
+/* CSS Resets */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,q,small,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;margin:0;padding:0}article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,video,object{display:block}a img{border:0}figure{position:relative}figure img{width:100%}
+
+.container {
+padding-left: $container-lateral-padding;
+padding-right: $container-lateral-padding;
+}
+
+.row {
+width: 100%;
+max-width: $row-width;
+margin: 0 auto;
+overflow: hidden;
+}
+
+.col{
+margin-right: $col-margin-right;
+float: left;
+}
+
+
+@for $i from 1 through $num-cols {
+  .col-#{$i} { @extend .col;
+    width: $col-unit * $i - $col-margin-right; }
+}
+
+.col-#{$num-cols} {
+margin-right: 0px;
+}
+
+.last {
+margin-right: 0px;
+}
+
+img, object, embed {
+max-width: 100%;
+}
