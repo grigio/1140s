@@ -1,0 +1,80 @@
+/* 1140s.scss is a SASS/SCSS version of the "1140px" layout system
+   Luigi Maselli - http://grigio.org
+ */
+/* Config */
+/* CSS Resets */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, q, small, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+article, aside, figure, figure img, figcaption, hgroup, footer, header, nav, section, video, object {
+  display: block; }
+
+a img {
+  border: 0; }
+
+figure {
+  position: relative; }
+
+figure img {
+  width: 100%; }
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.row {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  margin-right: 3.8%;
+  float: left; }
+
+.col-1 {
+  width: 4.85%; }
+
+.col-2 {
+  width: 13.5%; }
+
+.col-3 {
+  width: 22.15%; }
+
+.col-4 {
+  width: 30.8%; }
+
+.col-5 {
+  width: 39.45%; }
+
+.col-6 {
+  width: 48.1%; }
+
+.col-7 {
+  width: 56.75%; }
+
+.col-8 {
+  width: 65.4%; }
+
+.col-9 {
+  width: 74.05%; }
+
+.col-10 {
+  width: 82.7%; }
+
+.col-11 {
+  width: 91.35%; }
+
+.col-12 {
+  width: 100.0%; }
+
+.col-12 {
+  margin-right: 0px; }
+
+.last {
+  margin-right: 0px; }
+
+img, object, embed {
+  max-width: 100%; }

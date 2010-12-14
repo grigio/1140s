@@ -1,0 +1,10 @@
+1140s.scss is a SASS/SCSS version of the "1140px" layout system
+Luigi Maselli - http://grigio.org
+
+usage: sass 1140s.scss output.css
+or     @import "1140s"
+..in a SASS/SCSS File
+
+More info:
+SASS/SCSS       - http://sass-lang.com
+1140px Layout   - http://cssgrid.net
